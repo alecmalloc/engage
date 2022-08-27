@@ -3,18 +3,25 @@ import webbrowser
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
+url_file = open("urls.txt", "r")
+app_file = open("app.txt", "r")
+url_content = url_file.read()
+app_content = app_file.read()
+url_list = url_content.split(",")
+app_list = app_content.split(",")
+
 app = QApplication([])
 app.setQuitOnLastWindowClosed(False)
 
 # Define the applications to be opened
 def work_mode():
-    subprocess.Popen(["/usr/bin/open", "-a", "/Applications/Spotify.app"])
-    url1 = 'https://clickup.com'
-    url2 = 'https://cointracking.com'
-    # webbrowser.open_new_tab(url)
-    webbrowser.open_new(url1)
-    webbrowser.open_new(url2)
-    # subprocess.Popen(["/usr/bin/open", "-a", "/Applications/Brave Browser.app"])
+
+    for i in app_list:
+        app_route = "/Applications/" + i + ".app"
+        subprocess.Popen(["/usr/bin/open", "-a", app_route])
+
+    for i in url_list:
+        webbrowser.open_new(i)
 
 # Create the icon
 icon = QIcon("jet.png")
