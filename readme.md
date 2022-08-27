@@ -1,4 +1,4 @@
-![icon](jet.png)
+![icon](jet.png =250x250)
 
 Engage is a menu bar application for a quick start to your day. Opens a predetermined list of  applications at the click of a button. Currently only runs on MacOS. 
 
