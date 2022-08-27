@@ -1,4 +1,5 @@
 import subprocess
+import webbrowser
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
@@ -8,7 +9,12 @@ app.setQuitOnLastWindowClosed(False)
 # Define the applications to be opened
 def work_mode():
     subprocess.Popen(["/usr/bin/open", "-a", "/Applications/Spotify.app"])
-    subprocess.Popen(["/usr/bin/open", "-a", "/Applications/Brave Browser.app"])
+    url1 = 'https://clickup.com'
+    url2 = 'https://cointracking.com'
+    # webbrowser.open_new_tab(url)
+    webbrowser.open_new(url1)
+    webbrowser.open_new(url2)
+    # subprocess.Popen(["/usr/bin/open", "-a", "/Applications/Brave Browser.app"])
 
 # Create the icon
 icon = QIcon("jet.png")
