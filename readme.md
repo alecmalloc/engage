@@ -6,4 +6,4 @@ This project is largely inspired by the PythonGUIS tutorial on how to create Sys
 
 
 
-Menu bar icon used in this project: <a href="https://www.flaticon.com/free-icons/air-force" title="air-force icons">Air-force icons created by max.icons - Flaticon</a>
+The icon throughout this project: <a href="https://www.flaticon.com/free-icons/air-force" title="air-force icons">Air-force icons created by max.icons - Flaticon</a>
