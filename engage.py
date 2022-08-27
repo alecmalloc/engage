@@ -5,8 +5,24 @@ from PyQt5.QtWidgets import *
 
 
 # Fetch list of apps and Urls.
-url_file = open("/Users/stuart/Desktop/engage/assets/urls.txt", "r")
-app_file = open("/Users/stuart/Desktop/engage/assets/app.txt", "r")
+
+url_install_path = """
+/Users/stuart/Desktop/engage/assets/urls.txt
+"""
+app_install_path = """
+/Users/stuart/Desktop/engage/assets/apps.txt
+"""
+icon_install_path = """
+/Users/stuart/Desktop/engage/assets/jet.png
+"""
+
+url_path = url_install_path.replace('\n', '')
+app_path = app_install_path.replace('\n', '')
+icon_path = icon_install_path.replace('\n', '')
+
+
+url_file = open(url_path, "r")
+app_file = open(app_path, "r")
 url_content = url_file.read()
 app_content = app_file.read()
 url_list = url_content.split(",")
@@ -25,7 +41,7 @@ def work_mode():
         webbrowser.open_new(url_full)
 
 # Create the icon
-icon = QIcon("/Users/stuart/Desktop/engage/assets/jet.png")
+icon = QIcon(icon_path)
 
 # Create the tray
 tray = QSystemTrayIcon()
