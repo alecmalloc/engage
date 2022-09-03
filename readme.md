@@ -11,5 +11,5 @@ Python3 was used for this project.
 The icon used throughout this project: <a href="https://www.flaticon.com/free-icons/air-force" title="air-force icons">Air-force icons created by max.icons - Flaticon</a>
 
 ## Installation Guide
-Step by step guide
+
 ### Pre-requisites
