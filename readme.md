@@ -13,3 +13,21 @@ The icon used throughout this project: <a href="https://www.flaticon.com/free-ic
 ## Installation Guide
 
 ### Pre-requisites
+1. Python3. To check, open your terminal and try: 
+```
+python3 --version
+```
+If your terminal returns the output below you are set:
+```
+Python 3...
+```
+2. Homebrew. To check, open your terminal and try: 
+```
+brew --version
+```
+If your terminal returns the output below you are set:
+```
+Homebrew 3...
+...
+```
+
