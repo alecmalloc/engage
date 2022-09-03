@@ -40,5 +40,25 @@ def change_paths():
     list_lines[15] = str(script_dir) + "/assets/jet.png\n"
     with open('engage.py', 'w') as file:
         file.writelines(list_lines)
+        engage_lines.close
+    setup_lines = open("setup.py", "r")
+    list_lines = setup_lines.readlines()
+    list_lines[4] = "'" + str(script_dir) + "/assets/urls.txt,'\n"
+    list_lines[5] = "'" + str(script_dir) + "/assets/apps.txt,'\n"
+    list_lines[6] = "'" + str(script_dir) + "/assets/jet.png\'\n"
+    list_lines[9] = "'iconfile': '" + str(script_dir) + "/assets/jet.png\'\n"
+    with open('setup.py', 'w') as file:
+        file.writelines(list_lines)
+        setup_lines.close
 
+def build_application():
+    subprocess.call(['python3', 'setup.py', 'py2app', '-A'])
+    subprocess.call(['mv', 'dist/engage.app', '/Applications'])
+    subprocess.call(['clear'])
+    print("Engage has now been installed in your /Applications ! Feel free to exit this window and use your new app :)")
+
+
+install_dependencies()
+setup_lists()
 change_paths()
+build_application()

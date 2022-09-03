@@ -2,12 +2,12 @@ from setuptools import setup
 
 APP = ['engage.py']
 DATA_FILES = [
-    '/Users/stuart/Desktop/engage/assets/app.txt',
-    '/Users/stuart/Desktop/engage/assets/urls.txt',
-    '/Users/stuart/Desktop/engage/assets/jet.png'
-    ]
+'/Users/stuart/Desktop/engage/assets/urls.txt,'
+'/Users/stuart/Desktop/engage/assets/apps.txt,'
+'/Users/stuart/Desktop/engage/assets/jet.png'
+]
 OPTIONS = {'argv_emulation': True,
- 'iconfile': '/Users/stuart/Desktop/engage/assets/jet.png'
+'iconfile': '/Users/stuart/Desktop/engage/assets/jet.png'
  }
 
 setup(
