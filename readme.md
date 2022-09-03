@@ -13,15 +13,7 @@ The icon used throughout this project: <a href="https://www.flaticon.com/free-ic
 ## Installation Guide
 
 ### Pre-requisites
-1. Python3. To check, open your terminal and try: 
-```
-python3 --version
-```
-If your terminal returns the output below you are set:
-```
-Python 3...
-```
-2. Homebrew. To check, open your terminal and try: 
+1. Homebrew. To check, open your terminal and try: 
 ```
 brew --version
 ```
@@ -29,5 +21,26 @@ If your terminal returns the output below you are set:
 ```
 Homebrew 3...
 ...
+```
+Otherwise, use this command to install it to your machine:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. Python3. To check, open your terminal and try: 
+```
+python3 --version
+```
+If your terminal returns the output below you are set:
+```
+Python 3...
+```
+Otherwise, use google to help you install it ;)
+
+### Download and Build
+Next, clone the git repository to your computer. 
+
+Once you have opened a terminal in the main directory, execute the command below and follow all commands displayed in your terminal: 
+```
+python3 install.py
 ```
 
